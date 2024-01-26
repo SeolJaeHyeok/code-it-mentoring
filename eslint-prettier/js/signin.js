@@ -16,6 +16,7 @@ function showError(input, message) {
 
   const errorDiv = input.nextElementSibling;
   errorDiv.textContent = message;
+
   errorDiv.style.color = 'var(--Linkbrary-red, #FF5B56)';
   errorDiv.style.fontFamily = 'Pretendard';
   errorDiv.style.fontSize = '0.875rem';
