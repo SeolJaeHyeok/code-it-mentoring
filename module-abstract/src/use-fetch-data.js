@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react';
-import HttpClient from './apis';
+// import HttpClient from './apis/class';
+import createHttpClient from './apis/func';
 
 export default function useFetchData() {
-  const httpClient = new HttpClient('https://jsonplaceholder.typicode.com');
+  // const httpClient = new HttpClient('https://jsonplaceholder.typicode.com');
+  const httpClient = createHttpClient('https://jsonplaceholder.typicode.com');
   const [data, setData] = useState();
 
   const fetchData = async () => {
