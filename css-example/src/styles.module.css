@@ -1,0 +1,19 @@
+.example {
+  display: inline-flex;
+  padding: 50px;
+  border: 2px solid #000;
+  justify-content: center;
+  align-items: center;
+}
+
+:global(.example_css) .button{
+  background-color: blue;
+}
+
+:global(.example_css .button) {
+  background-color: red;
+}
+
+:global(.h2) {
+  background-color: green;
+}
