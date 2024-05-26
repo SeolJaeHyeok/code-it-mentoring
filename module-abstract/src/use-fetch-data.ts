@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react';
-import { todosApi } from './api-example';
 
-export default function useFetchData<T>() {
-  const [data, setData] = useState<T>();
+export default function useFetchData() {
+  const [data, setData] = useState();
 
   const fetchData = async () => {
-    const response = await todosApi.getTodos<T>();
-    setData(response);
+    // const result = httpClient1.get('/todos');
+    // console.log('result', result);
+    // setData(result);
   };
 
   useEffect(() => {
