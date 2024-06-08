@@ -47,8 +47,8 @@ const Modal = ({ children, ...props }: ModalProps) => {
     );
 };
 
-const ModalHeader = ({ children, ...props }: ModalProps) => {
-    return <div {...props}>{children}</div>;
+const ModalHeader = ({ children, as: Component = 'div', ...props }: ModalProps) => {
+    return <Component {...props}>{children}</Component>;
 };
 
 const ModalTitle = ({ children, as: Component = 'div', ...props }: ModalProps) => {
